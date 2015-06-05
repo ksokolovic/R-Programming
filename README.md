@@ -94,6 +94,37 @@ repository.
 [1] 323
 ```
 
+## Assignment 03
+
+To run the functions from *Assignment 03* I recommend you first set the working directory to the root of the 
+cloned repository.
+
+```sh
+> setwd("r-programming")	# We first set the working directory to the root of the cloned repository
+```
+
+```sh
+> source("assignment03/best.R")		# Load the function so it can be used
+>
+> best("TX", "heart attack")
+[1] "CYPRESS FAIRBANKS MEDICAL CENTER"
+>
+> best("TX", "heart failure")
+[1] "FORT DUNCAN MEDICAL CENTER"
+>
+> best("MD", "pneumonia")
+[1] "GREATER BALTIMORE MEDICAL CENTER"
+>
+> best("MD", "heart attack")
+[1] "JOHNS HOPKINS HOSPITAL, THE"
+>
+> best("BB", "heart attack")
+Error in best("BB", "heart attack") : invalid state
+>
+> best("NY", "hert attack")
+Error in best("NY", "hert attack") : invalid outcome
+```
+
 
 # Copyright
 * * *
