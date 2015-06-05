@@ -125,6 +125,19 @@ Error in best("BB", "heart attack") : invalid state
 Error in best("NY", "hert attack") : invalid outcome
 ```
 
+```sh
+> source("assignment03/rankhospital.R")		# Load the function so it can be used
+> source("assignment03/best.R")			# Load the best() function since it's used in the rankhospital()
+>
+> rankhospital("TX", "heart failure", 4)
+[1] "DETAR HOSPITAL NAVARRO"
+>
+> rankhospital("MD", "heart attack", "worst")
+[1] "HARFORD MEMORIAL HOSPITAL"
+>
+> rankhospital("MN", "heart attack", 5000)
+[1] NA
+```
 
 # Copyright
 * * *
